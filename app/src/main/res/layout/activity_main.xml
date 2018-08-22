@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edit_file_name_id"
+        android:layout_width="@dimen/size_300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/file_name"
+        android:inputType="text"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/edit_file_content_id"
+        android:layout_width="@dimen/size_300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_file_name_id"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:hint="@string/content"
+        android:inputType="text"
+        tools:ignore="LabelFor" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_id"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/edit_file_content_id"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/size_10dp"
+        android:layout_marginTop="@dimen/size_20dp"
+        android:background="@drawable/button_style_green"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/internal_radio_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/internal" />
+
+        <RadioButton
+            android:id="@+id/external_radio_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_5dp"
+            android:text="@string/external" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_write_id"
+        android:layout_width="@dimen/size_200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio_group_id"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/size_10dp"
+        android:layout_marginTop="@dimen/size_200dp"
+        android:background="@drawable/button_style_green"
+        android:text="@string/write" />
+
+    <Button
+        android:id="@+id/button_read_id"
+        android:layout_width="@dimen/size_200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_write_id"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/size_10dp"
+        android:background="@drawable/button_style_green"
+        android:text="@string/read" />
+</RelativeLayout>

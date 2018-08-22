@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Internal External Writer</string>
+    <string name="write">write</string>
+    <string name="read">read</string>
+    <string name="file_name">file name</string>
+    <string name="content">content</string>
+    <string name="internal">Internal</string>
+    <string name="external">External</string>
+    <string name="not_fileName_or_path">Please write fileName or create directory</string>
+    <string name="no_such_file">This file dose not exist</string>
+    <string name="create_file">File is create</string>
+</resources>
